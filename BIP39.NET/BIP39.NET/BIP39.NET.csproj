@@ -50,6 +50,14 @@
       <Name>BitcoinUtilities.NET</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BitcoinTools">
+      <HintPath>..\..\BitcoinUtilities.NET\BitcoinUtilities.NET\ExternalDLLs\BitcoinTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Crypto.Security">
+      <HintPath>..\..\BitcoinUtilities.NET\BitcoinUtilities.NET\ExternalDLLs\Crypto.Security.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

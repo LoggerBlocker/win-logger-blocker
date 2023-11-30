@@ -18,3 +18,5 @@ O:\Drive\Proyectos\personal\hunter\loggerblocker\BIP39.NET\BIP39.NET\obj\Release
 O:\Drive\Proyectos\personal\hunter\loggerblocker\BIP39.NET\BIP39.NET\obj\Release\BIP39.NET.csproj.CopyComplete
 O:\Drive\Proyectos\personal\hunter\loggerblocker\BIP39.NET\BIP39.NET\obj\Release\BIP39.dll
 O:\Drive\Proyectos\personal\hunter\loggerblocker\BIP39.NET\BIP39.NET\obj\Release\BIP39.pdb
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BIP39.NET\BIP39.NET\bin\Release\BitcoinTools.dll
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BIP39.NET\BIP39.NET\bin\Release\Crypto.Security.dll
