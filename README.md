@@ -9,5 +9,4 @@ Take control of your seed and keep safe from prying eyes.
 
 ### Supported Operating Systems
 
-- [Windows 11]
-- https://github.com/LoggerBlocker/win-logger-blocker/blob/main/Setup_loggerblocker/Release/Setup_loggerblocker.msi
+- [Windows 11] - https://github.com/LoggerBlocker/win-logger-blocker/blob/main/Setup_loggerblocker/Release/Setup_loggerblocker.msi
