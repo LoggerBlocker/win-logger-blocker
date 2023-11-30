@@ -2,6 +2,7 @@ using Bitcoin.BIP39;
 using Bitcoin.BitcoinUtilities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace main
 {
@@ -35,17 +36,12 @@ namespace main
             if (words_count == 12)
                 hexString = hexString.Substring(0, 32);
 
-
             byte[] entropyBytes = Utilities.HexStringToBytes(hexString);
             string entropy = string.Empty; //For next version
             BIP39 bip39 = new BIP39(entropyBytes, entropy);
 
             string[] words = bip39.MnemonicSentence.Split(' ');
-
-            _words = new List<string>();
-            for (int i = 0; i < words.Length; i++)
-                _words.Add(words[i]);
-
+            _words = words.ToList();
         }
     }
 }

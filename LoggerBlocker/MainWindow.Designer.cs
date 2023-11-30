@@ -35,23 +35,7 @@
             this.lb_info_2 = new System.Windows.Forms.Label();
             this.lb_info_3 = new System.Windows.Forms.Label();
             this.lb_info_1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_seed_01 = new System.Windows.Forms.TextBox();
-            this.txt_seed_02 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_seed_03 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_seed_04 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_seed_08 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_seed_07 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_seed_06 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_seed_05 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.wp_12_words = new System.Windows.Forms.Panel();
             this.txt_seed_12 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txt_seed_11 = new System.Windows.Forms.TextBox();
@@ -60,7 +44,23 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txt_seed_09 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_seed_08 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_seed_07 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_seed_06 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_seed_05 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_seed_04 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_seed_03 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_seed_02 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_seed_01 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.wp_24_words = new System.Windows.Forms.Panel();
             this.txt_seed_24 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txt_seed_23 = new System.Windows.Forms.TextBox();
@@ -85,12 +85,14 @@
             this.label24 = new System.Windows.Forms.Label();
             this.txt_seed_13 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.txt_seeds = new System.Windows.Forms.TextBox();
+            this.wp_12_words.SuspendLayout();
+            this.wp_24_words.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmb_words_count
             // 
+            this.cmb_words_count.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_words_count.FormattingEnabled = true;
             this.cmb_words_count.Location = new System.Drawing.Point(18, 27);
             this.cmb_words_count.Name = "cmb_words_count";
@@ -114,195 +116,71 @@
             this.txt_seed_words.Size = new System.Drawing.Size(200, 20);
             this.txt_seed_words.TabIndex = 2;
             this.txt_seed_words.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_words.TextChanged += new System.EventHandler(this.txt_seed_words_TextChanged);
             // 
             // lb_info_2
             // 
             this.lb_info_2.AutoSize = true;
             this.lb_info_2.ForeColor = System.Drawing.Color.Red;
-            this.lb_info_2.Location = new System.Drawing.Point(567, 306);
+            this.lb_info_2.Location = new System.Drawing.Point(12, 276);
             this.lb_info_2.Name = "lb_info_2";
-            this.lb_info_2.Size = new System.Drawing.Size(50, 13);
+            this.lb_info_2.Size = new System.Drawing.Size(523, 13);
             this.lb_info_2.TabIndex = 3;
-            this.lb_info_2.Text = "lb_info_2";
+            this.lb_info_2.Text = "Now, select the text below. Hold down the left mouse button and release it where " +
+    "you want to place the seed.";
+            this.lb_info_2.Visible = false;
             // 
             // lb_info_3
             // 
             this.lb_info_3.AutoSize = true;
             this.lb_info_3.ForeColor = System.Drawing.Color.Red;
-            this.lb_info_3.Location = new System.Drawing.Point(203, 306);
+            this.lb_info_3.Location = new System.Drawing.Point(506, 309);
             this.lb_info_3.Name = "lb_info_3";
             this.lb_info_3.Size = new System.Drawing.Size(196, 13);
             this.lb_info_3.TabIndex = 4;
             this.lb_info_3.Text = "The dragging has failed, please repeat it";
+            this.lb_info_3.Visible = false;
             // 
             // lb_info_1
             // 
             this.lb_info_1.AutoSize = true;
             this.lb_info_1.ForeColor = System.Drawing.Color.Red;
-            this.lb_info_1.Location = new System.Drawing.Point(415, 34);
+            this.lb_info_1.Location = new System.Drawing.Point(394, 30);
             this.lb_info_1.Name = "lb_info_1";
             this.lb_info_1.Size = new System.Drawing.Size(297, 13);
             this.lb_info_1.TabIndex = 5;
             this.lb_info_1.Text = "First, write a seed word, you can use any character or symbol.";
             // 
-            // panel1
+            // wp_12_words
             // 
-            this.panel1.Controls.Add(this.txt_seed_12);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.txt_seed_11);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.txt_seed_10);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.txt_seed_09);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.txt_seed_08);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txt_seed_07);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txt_seed_06);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.txt_seed_05);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.txt_seed_04);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txt_seed_03);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txt_seed_02);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txt_seed_01);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(18, 85);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(728, 85);
-            this.panel1.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(16, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "1.";
-            // 
-            // txt_seed_01
-            // 
-            this.txt_seed_01.Location = new System.Drawing.Point(27, 6);
-            this.txt_seed_01.Name = "txt_seed_01";
-            this.txt_seed_01.Size = new System.Drawing.Size(150, 20);
-            this.txt_seed_01.TabIndex = 1;
-            // 
-            // txt_seed_02
-            // 
-            this.txt_seed_02.Location = new System.Drawing.Point(212, 6);
-            this.txt_seed_02.Name = "txt_seed_02";
-            this.txt_seed_02.Size = new System.Drawing.Size(150, 20);
-            this.txt_seed_02.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(190, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "2.";
-            // 
-            // txt_seed_03
-            // 
-            this.txt_seed_03.Location = new System.Drawing.Point(393, 5);
-            this.txt_seed_03.Name = "txt_seed_03";
-            this.txt_seed_03.Size = new System.Drawing.Size(150, 20);
-            this.txt_seed_03.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(371, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(16, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "3.";
-            // 
-            // txt_seed_04
-            // 
-            this.txt_seed_04.Location = new System.Drawing.Point(575, 4);
-            this.txt_seed_04.Name = "txt_seed_04";
-            this.txt_seed_04.Size = new System.Drawing.Size(150, 20);
-            this.txt_seed_04.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(553, 8);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "4.";
-            // 
-            // txt_seed_08
-            // 
-            this.txt_seed_08.Location = new System.Drawing.Point(575, 30);
-            this.txt_seed_08.Name = "txt_seed_08";
-            this.txt_seed_08.Size = new System.Drawing.Size(150, 20);
-            this.txt_seed_08.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(553, 34);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(16, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "8.";
-            // 
-            // txt_seed_07
-            // 
-            this.txt_seed_07.Location = new System.Drawing.Point(393, 31);
-            this.txt_seed_07.Name = "txt_seed_07";
-            this.txt_seed_07.Size = new System.Drawing.Size(150, 20);
-            this.txt_seed_07.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(371, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(16, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "7.";
-            // 
-            // txt_seed_06
-            // 
-            this.txt_seed_06.Location = new System.Drawing.Point(212, 32);
-            this.txt_seed_06.Name = "txt_seed_06";
-            this.txt_seed_06.Size = new System.Drawing.Size(150, 20);
-            this.txt_seed_06.TabIndex = 11;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(190, 36);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "6.";
-            // 
-            // txt_seed_05
-            // 
-            this.txt_seed_05.Location = new System.Drawing.Point(27, 32);
-            this.txt_seed_05.Name = "txt_seed_05";
-            this.txt_seed_05.Size = new System.Drawing.Size(150, 20);
-            this.txt_seed_05.TabIndex = 9;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(5, 36);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(16, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "5.";
+            this.wp_12_words.Controls.Add(this.txt_seed_12);
+            this.wp_12_words.Controls.Add(this.label10);
+            this.wp_12_words.Controls.Add(this.txt_seed_11);
+            this.wp_12_words.Controls.Add(this.label11);
+            this.wp_12_words.Controls.Add(this.txt_seed_10);
+            this.wp_12_words.Controls.Add(this.label12);
+            this.wp_12_words.Controls.Add(this.txt_seed_09);
+            this.wp_12_words.Controls.Add(this.label13);
+            this.wp_12_words.Controls.Add(this.txt_seed_08);
+            this.wp_12_words.Controls.Add(this.label6);
+            this.wp_12_words.Controls.Add(this.txt_seed_07);
+            this.wp_12_words.Controls.Add(this.label7);
+            this.wp_12_words.Controls.Add(this.txt_seed_06);
+            this.wp_12_words.Controls.Add(this.label8);
+            this.wp_12_words.Controls.Add(this.txt_seed_05);
+            this.wp_12_words.Controls.Add(this.label9);
+            this.wp_12_words.Controls.Add(this.txt_seed_04);
+            this.wp_12_words.Controls.Add(this.label5);
+            this.wp_12_words.Controls.Add(this.txt_seed_03);
+            this.wp_12_words.Controls.Add(this.label4);
+            this.wp_12_words.Controls.Add(this.txt_seed_02);
+            this.wp_12_words.Controls.Add(this.label3);
+            this.wp_12_words.Controls.Add(this.txt_seed_01);
+            this.wp_12_words.Controls.Add(this.label2);
+            this.wp_12_words.Location = new System.Drawing.Point(18, 85);
+            this.wp_12_words.Name = "wp_12_words";
+            this.wp_12_words.Size = new System.Drawing.Size(728, 85);
+            this.wp_12_words.TabIndex = 6;
             // 
             // txt_seed_12
             // 
@@ -310,6 +188,9 @@
             this.txt_seed_12.Name = "txt_seed_12";
             this.txt_seed_12.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_12.TabIndex = 23;
+            this.txt_seed_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_12.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_12.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label10
             // 
@@ -326,6 +207,9 @@
             this.txt_seed_11.Name = "txt_seed_11";
             this.txt_seed_11.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_11.TabIndex = 21;
+            this.txt_seed_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_11.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_11.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label11
             // 
@@ -342,6 +226,9 @@
             this.txt_seed_10.Name = "txt_seed_10";
             this.txt_seed_10.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_10.TabIndex = 19;
+            this.txt_seed_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_10.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_10.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label12
             // 
@@ -358,6 +245,9 @@
             this.txt_seed_09.Name = "txt_seed_09";
             this.txt_seed_09.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_09.TabIndex = 17;
+            this.txt_seed_09.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_09.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_09.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label13
             // 
@@ -368,36 +258,189 @@
             this.label13.TabIndex = 16;
             this.label13.Text = "9.";
             // 
-            // panel2
+            // txt_seed_08
             // 
-            this.panel2.Controls.Add(this.txt_seed_24);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.txt_seed_23);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.txt_seed_22);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.txt_seed_21);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.txt_seed_20);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.txt_seed_19);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.txt_seed_18);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.txt_seed_17);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.txt_seed_16);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.txt_seed_15);
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.txt_seed_14);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.txt_seed_13);
-            this.panel2.Controls.Add(this.label25);
-            this.panel2.Location = new System.Drawing.Point(18, 176);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(728, 85);
-            this.panel2.TabIndex = 24;
+            this.txt_seed_08.Location = new System.Drawing.Point(575, 30);
+            this.txt_seed_08.Name = "txt_seed_08";
+            this.txt_seed_08.Size = new System.Drawing.Size(150, 20);
+            this.txt_seed_08.TabIndex = 15;
+            this.txt_seed_08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_08.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_08.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(553, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(16, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "8.";
+            // 
+            // txt_seed_07
+            // 
+            this.txt_seed_07.Location = new System.Drawing.Point(393, 31);
+            this.txt_seed_07.Name = "txt_seed_07";
+            this.txt_seed_07.Size = new System.Drawing.Size(150, 20);
+            this.txt_seed_07.TabIndex = 13;
+            this.txt_seed_07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_07.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_07.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(371, 35);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(16, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "7.";
+            // 
+            // txt_seed_06
+            // 
+            this.txt_seed_06.Location = new System.Drawing.Point(212, 32);
+            this.txt_seed_06.Name = "txt_seed_06";
+            this.txt_seed_06.Size = new System.Drawing.Size(150, 20);
+            this.txt_seed_06.TabIndex = 11;
+            this.txt_seed_06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_06.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_06.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(190, 36);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(16, 13);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "6.";
+            // 
+            // txt_seed_05
+            // 
+            this.txt_seed_05.Location = new System.Drawing.Point(27, 32);
+            this.txt_seed_05.Name = "txt_seed_05";
+            this.txt_seed_05.Size = new System.Drawing.Size(150, 20);
+            this.txt_seed_05.TabIndex = 9;
+            this.txt_seed_05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_05.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_05.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(5, 36);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(16, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "5.";
+            // 
+            // txt_seed_04
+            // 
+            this.txt_seed_04.Location = new System.Drawing.Point(575, 4);
+            this.txt_seed_04.Name = "txt_seed_04";
+            this.txt_seed_04.Size = new System.Drawing.Size(150, 20);
+            this.txt_seed_04.TabIndex = 7;
+            this.txt_seed_04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_04.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_04.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(553, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(16, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "4.";
+            // 
+            // txt_seed_03
+            // 
+            this.txt_seed_03.Location = new System.Drawing.Point(393, 5);
+            this.txt_seed_03.Name = "txt_seed_03";
+            this.txt_seed_03.Size = new System.Drawing.Size(150, 20);
+            this.txt_seed_03.TabIndex = 5;
+            this.txt_seed_03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_03.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_03.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(371, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(16, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "3.";
+            // 
+            // txt_seed_02
+            // 
+            this.txt_seed_02.Location = new System.Drawing.Point(212, 6);
+            this.txt_seed_02.Name = "txt_seed_02";
+            this.txt_seed_02.Size = new System.Drawing.Size(150, 20);
+            this.txt_seed_02.TabIndex = 3;
+            this.txt_seed_02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_02.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_02.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(190, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "2.";
+            // 
+            // txt_seed_01
+            // 
+            this.txt_seed_01.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_seed_01.Location = new System.Drawing.Point(27, 6);
+            this.txt_seed_01.Name = "txt_seed_01";
+            this.txt_seed_01.Size = new System.Drawing.Size(150, 20);
+            this.txt_seed_01.TabIndex = 1;
+            this.txt_seed_01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_01.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_01.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(5, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(16, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "1.";
+            // 
+            // wp_24_words
+            // 
+            this.wp_24_words.Controls.Add(this.txt_seed_24);
+            this.wp_24_words.Controls.Add(this.label14);
+            this.wp_24_words.Controls.Add(this.txt_seed_23);
+            this.wp_24_words.Controls.Add(this.label15);
+            this.wp_24_words.Controls.Add(this.txt_seed_22);
+            this.wp_24_words.Controls.Add(this.label16);
+            this.wp_24_words.Controls.Add(this.txt_seed_21);
+            this.wp_24_words.Controls.Add(this.label17);
+            this.wp_24_words.Controls.Add(this.txt_seed_20);
+            this.wp_24_words.Controls.Add(this.label18);
+            this.wp_24_words.Controls.Add(this.txt_seed_19);
+            this.wp_24_words.Controls.Add(this.label19);
+            this.wp_24_words.Controls.Add(this.txt_seed_18);
+            this.wp_24_words.Controls.Add(this.label20);
+            this.wp_24_words.Controls.Add(this.txt_seed_17);
+            this.wp_24_words.Controls.Add(this.label21);
+            this.wp_24_words.Controls.Add(this.txt_seed_16);
+            this.wp_24_words.Controls.Add(this.label22);
+            this.wp_24_words.Controls.Add(this.txt_seed_15);
+            this.wp_24_words.Controls.Add(this.label23);
+            this.wp_24_words.Controls.Add(this.txt_seed_14);
+            this.wp_24_words.Controls.Add(this.label24);
+            this.wp_24_words.Controls.Add(this.txt_seed_13);
+            this.wp_24_words.Controls.Add(this.label25);
+            this.wp_24_words.Location = new System.Drawing.Point(18, 176);
+            this.wp_24_words.Name = "wp_24_words";
+            this.wp_24_words.Size = new System.Drawing.Size(728, 85);
+            this.wp_24_words.TabIndex = 24;
             // 
             // txt_seed_24
             // 
@@ -405,6 +448,9 @@
             this.txt_seed_24.Name = "txt_seed_24";
             this.txt_seed_24.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_24.TabIndex = 23;
+            this.txt_seed_24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_24.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_24.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label14
             // 
@@ -421,6 +467,9 @@
             this.txt_seed_23.Name = "txt_seed_23";
             this.txt_seed_23.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_23.TabIndex = 21;
+            this.txt_seed_23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_23.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_23.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label15
             // 
@@ -437,6 +486,9 @@
             this.txt_seed_22.Name = "txt_seed_22";
             this.txt_seed_22.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_22.TabIndex = 19;
+            this.txt_seed_22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_22.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_22.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label16
             // 
@@ -453,6 +505,9 @@
             this.txt_seed_21.Name = "txt_seed_21";
             this.txt_seed_21.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_21.TabIndex = 17;
+            this.txt_seed_21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_21.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_21.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label17
             // 
@@ -469,6 +524,9 @@
             this.txt_seed_20.Name = "txt_seed_20";
             this.txt_seed_20.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_20.TabIndex = 15;
+            this.txt_seed_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_20.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_20.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label18
             // 
@@ -485,6 +543,9 @@
             this.txt_seed_19.Name = "txt_seed_19";
             this.txt_seed_19.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_19.TabIndex = 13;
+            this.txt_seed_19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_19.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_19.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label19
             // 
@@ -501,6 +562,9 @@
             this.txt_seed_18.Name = "txt_seed_18";
             this.txt_seed_18.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_18.TabIndex = 11;
+            this.txt_seed_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_18.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_18.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label20
             // 
@@ -517,6 +581,9 @@
             this.txt_seed_17.Name = "txt_seed_17";
             this.txt_seed_17.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_17.TabIndex = 9;
+            this.txt_seed_17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_17.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_17.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label21
             // 
@@ -533,6 +600,9 @@
             this.txt_seed_16.Name = "txt_seed_16";
             this.txt_seed_16.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_16.TabIndex = 7;
+            this.txt_seed_16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_16.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_16.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label22
             // 
@@ -549,6 +619,9 @@
             this.txt_seed_15.Name = "txt_seed_15";
             this.txt_seed_15.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_15.TabIndex = 5;
+            this.txt_seed_15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_15.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_15.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label23
             // 
@@ -565,6 +638,9 @@
             this.txt_seed_14.Name = "txt_seed_14";
             this.txt_seed_14.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_14.TabIndex = 3;
+            this.txt_seed_14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_14.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_14.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label24
             // 
@@ -581,6 +657,9 @@
             this.txt_seed_13.Name = "txt_seed_13";
             this.txt_seed_13.Size = new System.Drawing.Size(150, 20);
             this.txt_seed_13.TabIndex = 1;
+            this.txt_seed_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seed_13.MouseEnter += new System.EventHandler(this.txt_seed_MouseEnter);
+            this.txt_seed_13.MouseLeave += new System.EventHandler(this.txt_seed_MouseLeave);
             // 
             // label25
             // 
@@ -591,13 +670,26 @@
             this.label25.TabIndex = 0;
             this.label25.Text = "13.";
             // 
+            // txt_seeds
+            // 
+            this.txt_seeds.AllowDrop = true;
+            this.txt_seeds.Location = new System.Drawing.Point(18, 306);
+            this.txt_seeds.Name = "txt_seeds";
+            this.txt_seeds.Size = new System.Drawing.Size(479, 20);
+            this.txt_seeds.TabIndex = 25;
+            this.txt_seeds.Text = "Click and hold left mouse button, and then drop into text field";
+            this.txt_seeds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_seeds.TextChanged += new System.EventHandler(this.txt_seeds_TextChanged);
+            this.txt_seeds.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txt_seeds_MouseDown);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 361);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txt_seeds);
+            this.Controls.Add(this.wp_24_words);
+            this.Controls.Add(this.wp_12_words);
             this.Controls.Add(this.lb_info_1);
             this.Controls.Add(this.lb_info_3);
             this.Controls.Add(this.lb_info_2);
@@ -608,10 +700,11 @@
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoggerBlocker Version 0.10";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.TopMost = true;
+            this.wp_12_words.ResumeLayout(false);
+            this.wp_12_words.PerformLayout();
+            this.wp_24_words.ResumeLayout(false);
+            this.wp_24_words.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -625,7 +718,7 @@
         private System.Windows.Forms.Label lb_info_2;
         private System.Windows.Forms.Label lb_info_3;
         private System.Windows.Forms.Label lb_info_1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel wp_12_words;
         private System.Windows.Forms.TextBox txt_seed_01;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_seed_04;
@@ -650,7 +743,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_seed_05;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel wp_24_words;
         private System.Windows.Forms.TextBox txt_seed_24;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txt_seed_23;
@@ -675,6 +768,7 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox txt_seed_13;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txt_seeds;
     }
 }
 
