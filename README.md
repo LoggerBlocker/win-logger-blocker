@@ -15,3 +15,7 @@ Take control of your seed and keep safe from prying eyes.
 
 - Generate BIP39 seeds from a phrase or word that you can remember more easily.
 - Copy you seed without typing, clipboarding, and displaying
+
+
+
+MIT License
