@@ -1,0 +1,16 @@
+O:\Drive\Proyectos\personal\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\bin\Release\BitcoinUtilities.dll
+O:\Drive\Proyectos\personal\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\bin\Release\BitcoinUtilities.pdb
+O:\Drive\Proyectos\personal\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\bin\Release\BouncyCastle.Crypto.dll
+O:\Drive\Proyectos\personal\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.NET.csproj.AssemblyReference.cache
+O:\Drive\Proyectos\personal\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.NET.csproj.CoreCompileInputs.cache
+O:\Drive\Proyectos\personal\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.NET.csproj.CopyComplete
+O:\Drive\Proyectos\personal\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.dll
+O:\Drive\Proyectos\personal\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.pdb
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\bin\Release\BitcoinUtilities.dll
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\bin\Release\BitcoinUtilities.pdb
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\bin\Release\BouncyCastle.Crypto.dll
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.NET.csproj.AssemblyReference.cache
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.NET.csproj.CoreCompileInputs.cache
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.NET.csproj.CopyComplete
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.dll
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Release\BitcoinUtilities.pdb
