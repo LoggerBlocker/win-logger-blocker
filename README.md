@@ -17,5 +17,3 @@ Take control of your seed and keep safe from prying eyes.
 - Copy you seed without typing, clipboarding, and displaying
 
 
-
-MIT License
