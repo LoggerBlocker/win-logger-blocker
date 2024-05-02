@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BIP39.NET/BIP39.NET/bin/Debug
+/BIP39.NET/BIP39.NET/obj/Debug
+/BitcoinUtilities.NET/BitcoinUtilities.NET/bin/Debug
+/BitcoinUtilities.NET/BitcoinUtilities.NET/obj/Debug
+/LoggerBlocker/bin/Debug
+/LoggerBlocker/obj/Debug
+/.vs/loggerblocker/v17/.suo
