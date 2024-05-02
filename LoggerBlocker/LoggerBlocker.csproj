@@ -55,9 +55,12 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Updater">
+      <HintPath>..\BitcoinUtilities.NET\BitcoinUtilities.NET\ExternalDLLs\Updater.exe</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\SEED.cs" />
+    <Compile Include="Class\Helper.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -34,3 +34,4 @@ O:\Drive\Proyectos\personal\hunter\loggerblocker\LoggerBlocker\obj\Debug\LoggerB
 O:\Drive\Proyectos\personal\hunter\loggerblocker\LoggerBlocker\obj\Debug\LoggerBlocker.exe
 O:\Drive\Proyectos\personal\hunter\loggerblocker\LoggerBlocker\obj\Debug\LoggerBlocker.pdb
 O:\Drive\Proyectos\personal\hunter\loggerblocker\LoggerBlocker\bin\Debug\BitcoinTools.dll
+O:\Drive\Proyectos\personal\hunter\loggerblocker\LoggerBlocker\bin\Debug\ExternalDLLs\Updater.exe

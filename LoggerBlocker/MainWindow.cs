@@ -1,13 +1,15 @@
-﻿using BitcoinTools;
-using Crypto.security;
+﻿using Crypto.security;
 using main;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
     public partial class MainWindow : Form
     {
+        Timer timer = new Timer();
+
         private int _words_count
         {
             get
@@ -20,26 +22,36 @@ namespace WindowsFormsApp1
             }
         }
 
-        private SEED _seed { get; set; }
+        private Helper _Helper { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
             Initialize();
 
-            _seed = new SEED();
+            Text = "LoggerBlocker Version - " + Helper.current_version;
+            _Helper = new Helper();
+            if (_Helper.Check_update())
+                btn_update.Visible = true;
+
             txt_seeds.Visible = false;
             lb_info_3.Visible = false;
+
+            timer.Interval = 1 * 1000;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, System.EventArgs e)
+        {
+            if(_Helper.Check_update())
+                btn_update.Visible = true;
         }
 
         private void Initialize()
         {
             cmb_words_count.DataSource = new List<string> { "12 Words", "24 Words" };
             cmb_words_count.SelectedIndex = 0;
-
-
-            //Update_security update = new Update_security();
-            //update.Check_for_update();
             Reset();
         }
 
@@ -83,16 +95,15 @@ namespace WindowsFormsApp1
             {
                 wp_12_words.Visible = true;
                 wp_24_words.Visible = true;
-
             }
             if (txt_seed_words.Text.Length > 0)
-                _seed.Generate_seed(txt_seed_words.Text, _words_count);
+                _Helper.Generate_seed(txt_seed_words.Text, _words_count);
         }
 
         private void txt_seed_words_TextChanged(object sender, System.EventArgs e)
         {
-            _seed.Generate_seed(txt_seed_words.Text, _words_count);
-            if (_seed._words.Count > 11)
+            _Helper.Generate_seed(txt_seed_words.Text, _words_count);
+            if (_Helper._words.Count > 11)
             {
                 lb_info_1.ForeColor = System.Drawing.Color.Green;
                 lb_info_1.Text = "Seed generated, you can move the cursor to see the words";
@@ -103,9 +114,9 @@ namespace WindowsFormsApp1
 
         private void txt_seed_MouseEnter(object sender, System.EventArgs e)
         {
-            if (_seed == null) return;
-            if (_seed._words == null) return;
-            if (_seed._words.Count == 0) return;
+            if (_Helper == null) return;
+            if (_Helper._words == null) return;
+            if (_Helper._words.Count == 0) return;
 
 
             if (sender.GetType() == typeof(TextBox))
@@ -119,9 +130,9 @@ namespace WindowsFormsApp1
 
                 int index = int.Parse(numbers) - 1;
 
-                if (_seed._words.Count > index)
+                if (_Helper._words.Count > index)
                 {
-                    txt.Text = _seed._words[index];
+                    txt.Text = _Helper._words[index];
                     txt.BackColor = System.Drawing.Color.White;
                     txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
@@ -148,14 +159,14 @@ namespace WindowsFormsApp1
         {
             bool ok = false;
 
-            if (_seed == null) return;
-            if (_seed._words == null) return;
-            if (_seed._words.Count == 0) return;
+            if (_Helper == null) return;
+            if (_Helper._words == null) return;
+            if (_Helper._words.Count == 0) return;
 
             if (sender.GetType() == typeof(TextBox))
             {
                 string seed = string.Empty;
-                foreach (string word in _seed._words)
+                foreach (string word in _Helper._words)
                     seed += word + " ";
 
                 txt_seeds.DoDragDrop(seed, DragDropEffects.Copy | DragDropEffects.Move);
@@ -166,6 +177,15 @@ namespace WindowsFormsApp1
             {
                 lb_info_3.Visible = true;
             }
+        }
+
+        private void btn_update_Click(object sender, System.EventArgs e)
+        {
+            try
+            {
+                Process.Start("https://github.com/LoggerBlocker/win-logger-blocker/tree/main");
+            }
+            catch { }
         }
     }
 }

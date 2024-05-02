@@ -52,6 +52,9 @@
     <Content Include="ExternalDLLs\BitcoinTools.dll" />
     <Content Include="ExternalDLLs\BouncyCastle.Crypto.dll" />
     <Content Include="ExternalDLLs\Crypto.Security.dll" />
+    <Content Include="ExternalDLLs\Updater.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

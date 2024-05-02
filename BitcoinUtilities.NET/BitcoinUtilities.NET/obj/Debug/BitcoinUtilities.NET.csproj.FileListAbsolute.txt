@@ -14,3 +14,4 @@ O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUti
 O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Debug\BitcoinUtilities.NET.csproj.CopyComplete
 O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Debug\BitcoinUtilities.dll
 O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\obj\Debug\BitcoinUtilities.pdb
+O:\Drive\Proyectos\personal\hunter\loggerblocker\BitcoinUtilities.NET\BitcoinUtilities.NET\bin\Debug\ExternalDLLs\Updater.exe

@@ -86,6 +86,7 @@
             this.txt_seed_13 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.txt_seeds = new System.Windows.Forms.TextBox();
+            this.btn_update = new System.Windows.Forms.Button();
             this.wp_12_words.SuspendLayout();
             this.wp_24_words.SuspendLayout();
             this.SuspendLayout();
@@ -682,11 +683,24 @@
             this.txt_seeds.TextChanged += new System.EventHandler(this.txt_seeds_TextChanged);
             this.txt_seeds.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txt_seeds_MouseDown);
             // 
+            // btn_update
+            // 
+            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.Location = new System.Drawing.Point(537, 335);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(215, 23);
+            this.btn_update.TabIndex = 26;
+            this.btn_update.Text = "Available update";
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Visible = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 361);
+            this.Controls.Add(this.btn_update);
             this.Controls.Add(this.txt_seeds);
             this.Controls.Add(this.wp_24_words);
             this.Controls.Add(this.wp_12_words);
@@ -699,7 +713,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoggerBlocker Version 0.10";
+            this.Text = "LoggerBlocker Version";
             this.TopMost = true;
             this.wp_12_words.ResumeLayout(false);
             this.wp_12_words.PerformLayout();
@@ -769,6 +783,7 @@
         private System.Windows.Forms.TextBox txt_seed_13;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txt_seeds;
+        private System.Windows.Forms.Button btn_update;
     }
 }
 

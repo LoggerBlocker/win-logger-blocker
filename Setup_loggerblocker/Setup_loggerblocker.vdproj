@@ -309,6 +309,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_56D7C530D7EEAE5B0AB47BC165187CE3"
+        "OwnerKey" = "8:_05079F1795E549D18259EBCD7259D441"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_576ECE146B30324B69B5AB1157C792CB"
         "OwnerKey" = "8:_05079F1795E549D18259EBCD7259D441"
         "MsmSig" = "8:_UNDEFINED"
@@ -323,6 +329,12 @@
         {
         "MsmKey" = "8:_5C78FCC568BE04C8D43AAFA7FAA41551"
         "OwnerKey" = "8:_05079F1795E549D18259EBCD7259D441"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5D034EF2928A73DB5A6CE8064F76AC74"
+        "OwnerKey" = "8:_18EFCFC06CB5F29FFCAAC264ABE42483"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -687,6 +699,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_CBEE96886552FBF6DD1E49AF78224F07"
+        "OwnerKey" = "8:_56D7C530D7EEAE5B0AB47BC165187CE3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_CDB7906678450E78344E1B0647641AF4"
         "OwnerKey" = "8:_05079F1795E549D18259EBCD7259D441"
         "MsmSig" = "8:_UNDEFINED"
@@ -778,6 +796,12 @@
         "Entry"
         {
         "MsmKey" = "8:_F68D6C073599EC65CBE93EA47C934BF9"
+        "OwnerKey" = "8:_18EFCFC06CB5F29FFCAAC264ABE42483"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F68D6C073599EC65CBE93EA47C934BF9"
         "OwnerKey" = "8:_05079F1795E549D18259EBCD7259D441"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -839,6 +863,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_A6F7621428249DA8263E1F9453ED643A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_56D7C530D7EEAE5B0AB47BC165187CE3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -2957,6 +2987,37 @@
                     }
                 }
             "SourcePath" = "8:System.Net.WebSockets.Client.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_0CCEC9ED7187438AAB33C72CBB24E449"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_56D7C530D7EEAE5B0AB47BC165187CE3"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Updater, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_56D7C530D7EEAE5B0AB47BC165187CE3"
+                    {
+                    "Name" = "8:Updater.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Updater.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_0CCEC9ED7187438AAB33C72CBB24E449"
@@ -5511,6 +5572,28 @@
         }
         "Folder"
         {
+            "{1525181F-901A-416C-8A58-119130FE478E}:_0C8D14A9282C439EBAC82EFFBBE0FC0B"
+            {
+            "Name" = "8:#1915"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:AppDataFolder"
+                "Folders"
+                {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_FAD181DBEC5C4AC28DFF3C864A4B7D54"
+                    {
+                    "Name" = "8:LoggerBlocker"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_7F0BC24786944A95B86F263BB6AF7327"
+                        "Folders"
+                        {
+                        }
+                    }
+                }
+            }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_0CCEC9ED7187438AAB33C72CBB24E449"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\"
@@ -5545,6 +5628,17 @@
                 {
                 }
             }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_B48FBD21C64B4615BF00B3DBE7A01B5E"
+            {
+            "Name" = "8:#1928"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:StartupFolder"
+                "Folders"
+                {
+                }
+            }
         }
         "LaunchCondition"
         {
@@ -5562,7 +5656,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Logger blocker"
         "ProductCode" = "8:{3D1E18B6-BE58-4653-BF23-29DB13BBF2C8}"
-        "PackageCode" = "8:{B2656BF4-1B57-4B74-9B66-5DDF5097934A}"
+        "PackageCode" = "8:{DC7F2D2B-C07B-4A7B-AE30-FA8C391A87A3}"
         "UpgradeCode" = "8:{6178D45D-3389-48E7-A6A1-DC149BFA0A39}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -5603,7 +5697,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_77449AC1916B4A06A811D5363DA40D2D"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_214A564F324A46A4BD0C1A858CC60C62"
                             {
                             "Name" = "8:[Manufacturer]"
                             "Condition" = "8:"
@@ -5612,6 +5706,70 @@
                             "Transitive" = "11:FALSE"
                                 "Keys"
                                 {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_615A9B199C6B4A77B4CD5F6C1D1D4E84"
+                            {
+                            "Name" = "8:Microsoft"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A7B90575AB34481CAA18B120D39965CB"
+                                    {
+                                    "Name" = "8:Windows"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_DC7653C420AD46B19D67F2EF8EDB498F"
+                                            {
+                                            "Name" = "8:CurrentVersion"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_D65E1910AF154C2B9C1027AE2EDFB44C"
+                                                    {
+                                                    "Name" = "8:Run"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                        }
+                                                        "Values"
+                                                        {
+                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B928C4EAE52544F2BAA9A172C1413AEE"
+                                                            {
+                                                            "Name" = "8:Updater"
+                                                            "Condition" = "8:"
+                                                            "Transitive" = "11:FALSE"
+                                                            "ValueTypes" = "3:1"
+                                                            "Value" = "8:[TARGETDIR]Updater.exe"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
                                 }
                                 "Values"
                                 {
@@ -5646,6 +5804,70 @@
                             "Transitive" = "11:FALSE"
                                 "Keys"
                                 {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_EA0C95534BC0493D8259E28A6A635B10"
+                            {
+                            "Name" = "8:Microsoft"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_C43B32B9A63B46CAA236AC7EA73A4BA9"
+                                    {
+                                    "Name" = "8:Windows"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_97BBA4D24A4249F4B823761D95FBDB5A"
+                                            {
+                                            "Name" = "8:CurrentVersion"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_00ACC798425D423B9145680325A615CF"
+                                                    {
+                                                    "Name" = "8:Run"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                        }
+                                                        "Values"
+                                                        {
+                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C7CA98107DAC46D0B6E693F74C2E32B5"
+                                                            {
+                                                            "Name" = "8:Updater"
+                                                            "Condition" = "8:"
+                                                            "Transitive" = "11:FALSE"
+                                                            "ValueTypes" = "3:1"
+                                                            "Value" = "8:[TARGETDIR]Updater.exe"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
                                 }
                                 "Values"
                                 {
